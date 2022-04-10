@@ -7,7 +7,7 @@ import TaskView from './TodoView';
 const App = () => {
 
   const [todoList, setTodoList] = useState([]); //todoListを管理するState
-  const [todoText, setTodoText] = useState(); // 新規タスクの追加のテキストフォームに入寮される文字を管理するState
+  const [todoText, setTodoText] = useState(''); // 新規タスクの追加のテキストフォームに入寮される文字を管理するState
 
   // 追加ボタンをクリックされると実行される関数
   const onClickAdd = () => {
@@ -25,7 +25,7 @@ const App = () => {
       <TaskView 
         todoList={todoList}
         onClickAdd={onClickAdd}
-        setTodoList = {setTodoList} 
+        setTodoList = {setTodoList}
       />  
         
       <AddTaskForm
