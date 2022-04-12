@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../App.css';
 import AddTaskForm from './AddTaskForm';
 import RadioButtonView from './RadioButtonView';
-import TaskView from './MakeTaskPage';
+import MakeTaskPage from './MakeTaskPage';
 
 const App = () => {
 
@@ -22,7 +22,7 @@ const App = () => {
       <h1>TODOリスト</h1>
 
       <RadioButtonView />
-      <TaskView 
+      <MakeTaskPage
         todoList={todoList}
         onClickAdd={onClickAdd}
         setTodoList = {setTodoList}

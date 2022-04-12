@@ -1,7 +1,7 @@
 import StatusButton from './StatusButton'
 import Deletebutton from './DeleteButton'
 
-const makeTaskPage = (props) => {
+const MakeTaskPage = (props) => {
     return (
         <div className="viewTaskArea">
         <table>
@@ -37,4 +37,4 @@ const makeTaskPage = (props) => {
 
 }
 
-export default makeTaskPage;
+export default MakeTaskPage;
