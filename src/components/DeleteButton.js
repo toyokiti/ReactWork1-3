@@ -2,8 +2,9 @@
 const DeleteButton = (props) =>{
 
     const onClickDelete = () => {
-        const todos = props.todoList; //todosにtodoListをコピー
-        todos.splice(props.index, 1); //todoから対象のtaskを削除
+        const todos = props.todoList.filter((value, index) => {
+            return props.index !== index;
+        }); 
         props.setTodoList([...todos]); //todoListを上書き
     }   
 

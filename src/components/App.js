@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../App.css';
 import AddTaskForm from './AddTaskForm';
 import RadioButtonView from './RadioButtonView';
-import TaskView from './TodoView';
+import TaskView from './MakeTaskPage';
 
 const App = () => {
 
